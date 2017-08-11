@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--<script
-  src="http://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>-->
   <script>
-    window.texts = [];
+    window.imports = {};
   </script>
-  <script src='test.js'></script>
+  <script src='test.js' id = 'meep'></script>
 
 <title> Arielle Brix </title>
 </head>
@@ -53,11 +49,37 @@
       <object data='./test.html' id = 'bears'></object>
       <object data='./test.txt' id = 'beep'></object>
     </div>
+<style>
+  #storiesList {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .story{
+    width:350px;
+  }
+@media (max-width: 500px) {
+  .story {
+    width: 95%;
+  }
+}
+</style>
+<div id='storiesList'>
+  <div class = 'story'>
+    <b>A New Role</b><br>
+    <i>A transgender and transformation story</i>
+      <blockquote>Turns girl blaaaaaaaaaaaah blaaah dlfjladjfa djfladj a;dfkja;df adjfladjfa fadfa</blockquote>
+  </div>
+  <div class = 'story'>
+    <b>A New Role</b><br>
+    <i>A transgender and transformation story</i>
+      <blockquote>Turns girl blaaaaaaaaaaaah blaaah dlfjladjfa djfladj a;dfkja;df adjfladjfa fadfa</blockquote>
+  </div>
+</div>
+
+
     <script>
     let x = document.querySelector('#view')
-    console.log(document.querySelector('#bears'))
-    setTimeout(function() {console.log(x.innerHTML)},1000)
-    console.log(texts)
   //  $('#view').load("./test.txt");
     </script>
 
