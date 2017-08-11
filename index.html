@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>-->
+  <script>
+    window.texts = [];
+  </script>
+  <script src='test.js'></script>
+
+<title> Arielle Brix </title>
+</head>
+<style>
+  html, body {
+    height:100%;
+    width: 100%;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .navSection {
+    position:relative;
+    display: inline-flex;
+  }
+  .left {
+    margin-right: auto;
+    margin-left: 200px;
+
+    background-color: blue;
+  }
+  .right {
+    margin-left:auto;
+    background-color: red;
+  }
+  #cows {
+    color: blue;
+  }
+</style>
+<body>
+    <h1> Arielle Brix's stories </h1>
+    <div class='row'>
+      <div class = 'navSection left'>
+        test
+      </div>
+      <div class = 'navSection right'>
+        bears
+      </div>
+    </div>
+    <div id='view'>
+      <object data='./test.html' id = 'bears'></object>
+      <object data='./test.txt' id = 'beep'></object>
+    </div>
+    <script>
+    let x = document.querySelector('#view')
+    console.log(document.querySelector('#bears'))
+    setTimeout(function() {console.log(x.innerHTML)},1000)
+    console.log(texts)
+  //  $('#view').load("./test.txt");
+    </script>
+
+</body>
+</html>
