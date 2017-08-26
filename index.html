@@ -42,9 +42,18 @@
     font-style: oblique;
   }
   #storiesList blockquote {
-    margin-left:.5rem;
+    margin-left:.35rem;
     margin-top:3px;
     font-size:.95rem;
+  }
+  #storiesList ul {
+    margin-left: -1rem;
+  }
+  .chapterBlurb {
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+    width: 95%;
+    max-height:3.4rem;
   }
 @media (max-width: 500px) {
   .story {
@@ -201,6 +210,9 @@ Tags: [Solo Female, Robotic Dildo]
     <script>
     let x = document.querySelector('#view')
   //  $('#view').load("./test.txt");
+    </script>
+    <script>
+    //simplifies blockquote
     </script>
 
 </body>
