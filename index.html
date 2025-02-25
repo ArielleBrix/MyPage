@@ -2,8 +2,14 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src='https://lycelia.com/lib/ljs2.js'></script>
   <script>
     window.imports = {};
+    $selectSearch=function(s){
+    	if (s=='all') $('.story',m=>m.s({display:''}))
+    	else if (['bimbo','futa','gender'].includes(s)) $('.story',m=>m.$('.storyInfo')?.t().match(R(s,'i'))?m.s({display:''}):m.s({display:'none'}))
+    	else if (s=='non-erotic') $('.story',m=>m.t().match(/(\bPG-|\bR\b)/)?m.s({display:''}):m.s({display:'none'}))
+    }
   </script>
 	<base target=_blank></base>
 <title> Arielle Brix's Stories </title>
@@ -33,7 +39,7 @@
   }
   .story{
   	width:100%;
-    display:inline-block;
+  	break-inside:avoid;
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow:1;
@@ -51,6 +57,7 @@
     margin-top:.1rem;
     font-size:1.1rem;
   }
+  select, option {font-size:1.25rem;}
   #storiesList ul { margin-left: -1rem; }
   li {list-style-type:none;}
   li > a {font-weight:600;}
@@ -67,12 +74,17 @@
 	}
 </style>
 <body>
-<div style='background-color:rgba(255,255,255,.93);border-radius:1rem;box-shadow:.1rem .1rem .2rem .1rem black;'>
-  <h1 style='text-align:center;'> Arielle Brix's stories </h1>
-  <b> Newest Releases Dec 2, 2024: <a href='https://www.amazon.com/Growing-Problem-Part-Horse-Futa-ebook/dp/B0DPGSJV8T'>A Growing Problem (Horse Futa Flu Part 1)</a> and  Nov 7, 2023: <a href='https://www.amazon.com/gp/product/B0CMJLYN2S'>Carnival Magic (part 8/8)</a></b>
-  <p>Note: Unless marked otherwise, links lead to X-rated stories. <a href='#disclaimer' style='display:none;'>Disclaimer</a></p>
-  <hr>
-  <h2 style='text-align: center;'>Kindle books/novellas/short stories</h2>
+<div style='background-color:rgba(255,255,255,.93);border-radius:1rem;box-shadow:.1rem .1rem .2rem .1rem black;margin-bottom:.25rem;padding-bottom:.25rem;'>
+  <h1 style='text-align:center;margin-bottom:.25rem;'> Arielle Brix's stories </h1>
+  <b> Newest Releases <a href='https://www.amazon.com/dp/B0DPJHQN73'>Horse Futa Flu Series</a> and <a href='https://www.amazon.com/gp/product/B0CMJLYN2S'>Carnival Magic (part 8/8)</a></b>
+  <div>Note: Unless marked otherwise, links lead to X-rated stories.</div>
+ 	<div style=font-size:1.25rem>Show <select onchange=$selectSearch(this.value)>
+ 		<option value=all>all
+ 		<option value=non-erotic>non-erotic
+ 		<option value=bimbo>bimbo/bimboization
+ 		<option value=futa>futa (dickgirl)
+ 		<option value=gender>gender bender
+ 	</select> stories</div>
 </div>
 <div id='storiesList'>
 	<div class='story'>
@@ -83,9 +95,9 @@
       In 1917 a young woman seeks a husband, but with the war in full swing men are few to be found. With so many needs to be met its hard to ignore the effects of the new flu that have left many women in town with a new and distractingly large appendage. But she couldn't. She's a good, Christian woman. It would be wrong. Very, very wrong....At the very least she promised herself she wouldn't touch them more than once.
     </blockquote>
     <ul>
-      <li><a href='https://www.amazon.com/Growing-Problem-Part-Horse-Futa-ebook/dp/B0DPGSJV8T'>Part 1</a> <b>*New!*</b></li>
+      <li><a href='https://www.amazon.com/dp/B0DPJHQN73'>Series Page (8 part series)</a> <b>*New!*</b></li>
     </ul>
-    <div class='storyStatus'>Will publish regularly until complete. Estimated 9 part series.</div>
+    <div class='storyStatus'>Complete</div>
   </div>
   <div class='story'>
     <div class='storyTitle'>Quarterback to Bimbo: Jiggle to Victory</div>
@@ -96,10 +108,9 @@
       But will he be careful enough to avoid unintended side effects? (176,500 words -- 706 pages)
     </blockquote>
     <ul>
-      <li><a href='https://www.amazon.com/dp/B0BTXSW2T5'>Oneshot
-      </a> <b>*New!*</b></li>
+      <li><a href='https://www.amazon.com/dp/B0BTXSW2T5'>book 1/1</a>
     </ul>
-    <div class='storyStatus'>Status: Open to writing a sequel if readers are interested</div>
+    <div class='storyStatus'></div>
   </div>
   <div class='story'>
     <div class='storyTitle'>Hay Fever: Bimbo Banker</div>
@@ -110,8 +121,7 @@
        (29,600 words -- 118 pages)
     </blockquote>
     <ul>
-      <li><a href='https://www.amazon.com/dp/B0C2QJ7J66'>Oneshot
-      </a> <b>*New!*</b></li>
+      <li><a href='https://www.amazon.com/dp/B0C2QJ7J66'>Novella</a>
     </ul>
   </div>
   <div class='story'>
@@ -176,7 +186,7 @@
     <blockquote>Macho man Jason made the mistake of sleeping with his girlfriend's twin sister. Intending to curse him with impotence until he apologizes, her spell goes awry. Despite apologizing, Jason soon finds himself turning into a woman, and one with a particular fetish for being submissive, at that. Will his girlfriend's attempt to cure him succeed, or will the transformation continue even further?</blockquote>
     <a href="https://amzn.to/39p8jAr">Part 1</a> <a href="https://amzn.to/3or0vSX">2</a> <a href="https://amzn.to/3oz8aPm">3</a> <a href="https://amzn.to/3oufrzA">4</a> <a href="https://amzn.to/2Yqr3cC">5</a>
     <a href="https://amzn.to/2McAUQE">6</a> <a href="https://amzn.to/2MA3zPi">7</a>
-    <div class='storyStatus'>More to come.</div>
+    <div class='storyStatus'>Undergoing rewrite, new complete version expected in March 2025.</div>
   </div>
   <div class='story'>
     <div class='storyTitle'>22nd Century Cowgirl</div>
@@ -243,9 +253,9 @@
     <img src='images/alt getting literal.jpg'>
     <blockquote>Subject to a number of strange disturbances, a woman learns that things said around her have a tendency to come true. It might not be such a problem if those around her weren't so raunchy. </blockquote>
     <ul>
-      <li><a href='https://amzn.to/2YnxooX'>Oneshot</a></li>
+      <li><a href='https://amzn.to/2YnxooX'>Short Story</a></li>
     </ul>
-    <div class='storyStatus'>Status: Open to writing a sequel if readers are interested</div>
+    <div class='storyStatus'><!--Open to writing a sequel if readers are interested--></div>
   </div>
   <div class='story'>
     <div class='storyTitle'>Leashed Libido</div>
@@ -267,10 +277,9 @@
 
     <blockquote>A bottle of experimental pills from decades past yields unexpectedly hot and steamy side effects for two young coeds. (now re-edited and expanded with 6200 words of additional content)</blockquote>
     <ul>
-      <li><a href='https://amzn.to/39pwMFO'>
-        Oneshot</a></li>
+      <li><a href='https://amzn.to/39pwMFO'>Novelette</a></li>
     </ul>
-    <div class='storyStatus'>Possible Sequel in the works.</div>
+    <div class='storyStatus'></div>
   </div>
   <div class='story'>
     <div class='storyTitle'>Superguy vs Doctor Reverso</div>
@@ -279,10 +288,9 @@
     <blockquote>After getting kidnapped and waiting for her hero Superguy to rescue her, the rescue goes terribly wrong and various traits get swapped and copied between him and her by the dastardly Doctor Reverso. She's left flying him to safety instead, wondering why his chest keeps getting softer and his body slimmer. <br>Also worrisome is why she's finding it so fun to play with him as a strange tightness builds in her panties that she can't explain. How could trying to get kidnapped so she could have a romantic sex-filled night with her idol turn out so wrong?<br>
     Or maybe she just needed to reassess what was right.</blockquote>
     <ul>
-      <li><a href='https://www.amazon.com/dp/B09X7JDLL7'>Oneshot
-        </a></li>
+      <li><a href='https://www.amazon.com/dp/B09X7JDLL7'>Novella</a></li>
     </ul>
-    <div class='storyStatus'>Status: Might be a few shorts for an additional epilogue but this is probably complete.</div>
+    <div class='storyStatus'>Status: Complete<!--Might be a few shorts for an additional epilogue but this is probably complete.--></div>
   </div>
   <div class='story'>
     <div class='storyTitle'>A Sexier CIA</div>
